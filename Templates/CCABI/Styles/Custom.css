@@ -1,0 +1,57 @@
+body {
+	background: url("../Images/noisy_grid.png");
+}
+.container {
+	background: rgb(255, 255, 255);
+}
+.page-curl {
+	/*background: linear-gradient(0deg, rgb(245, 245, 245) 0%, rgb(255, 255, 255) 25%, rgb(255, 255, 255) 75%, rgb(245, 245, 245) 100%);*/ margin: 50px auto; padding: 15px; border-radius: 6px; border: 1px solid rgb(119, 119, 119); border-image: none; width: 800px; position: relative; box-shadow: 0px 0px 6px rgba(0,0,0,0.5); -webkit-border-radius: 6px 6px 6px 6px; -moz-border-radius: 6px 6px 6px 6px; -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.page-curl::before {
+	background: none; left: 12px; width: 40%; height: 10px; bottom: 12px; position: absolute; z-index: -1; content: ""; box-shadow: 0px 10px 12px rgba(0,0,0,0.5); transform: skew(-4deg) rotate(-4deg); -webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5); -webkit-transform: skew(-4deg) rotate(-4deg); -moz-transform: skew(-4deg) rotate(-4deg);
+}
+.page-curl::after {
+	background: none; left: 12px; width: 40%; height: 10px; bottom: 12px; position: absolute; z-index: -1; content: ""; box-shadow: 0px 10px 12px rgba(0,0,0,0.5); transform: skew(-4deg) rotate(-4deg); -webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5); -webkit-transform: skew(-4deg) rotate(-4deg); -moz-transform: skew(-4deg) rotate(-4deg);
+}
+.page-curl::after {
+	left: auto; right: 12px; transform: skew(4deg) rotate(4deg); -webkit-transform: skew(4deg) rotate(4deg); -moz-transform: skew(4deg) rotate(4deg);
+}
+.shadow-left.page-curl {
+	background: linear-gradient(0deg, rgb(245, 245, 245) 0%, rgb(255, 255, 255) 50%) !important;
+}
+.shadow-right.page-curl {
+	background: linear-gradient(0deg, rgb(255, 255, 255) 50%, rgb(245, 245, 245) 100%) !important;
+}
+.shadow-bottom::before {
+	top: auto; bottom: 12px; box-shadow: 0px 10px 12px rgba(0,0,0,0.5); -webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+}
+.shadow-bottom::after {
+	top: auto; bottom: 12px; box-shadow: 0px 10px 12px rgba(0,0,0,0.5); -webkit-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+}
+.shadow-left::after {
+	display: none;
+}
+.shadow-right::before {
+	display: none;
+}
+.shadow-left.shadow-top-bottom::after {
+	left: 12px; top: 15px; right: auto; bottom: auto; display: block; box-shadow: 0px -10px 12px rgba(0,0,0,0.5); -webkit-box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.5);
+}
+.shadow-right.shadow-top-bottom::before {
+	left: auto; top: 15px; right: 12px; bottom: auto; display: block; box-shadow: 0px -10px 12px rgba(0,0,0,0.5); -webkit-box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 -10px 12px rgba(0, 0, 0, 0.5);
+}
+ol.slats li {
+	margin: 0px 0px 10px; padding: 0px 0px 10px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+ol.slats li:last-child {
+	margin: 0px; padding: 0px; border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+ol.slats li h3 {
+	line-height: 1.1; font-size: 16px; font-weight: bold;
+}
+ol.slats li p {
+	line-height: 1.4; font-size: 14px;
+}
+ol.slats li p span.meta {
+	color: rgb(153, 153, 153); font-size: 12px; display: block;
+}
